@@ -16,3 +16,11 @@ for d in (dict_a,dict_b,dict_c):
 
 result = {**dict_a, **dict_a, **dict_c}
 print(result)
+
+
+a = [-5, -3, 1, 2, 3]
+new_a = sorted([i**2 for i in a])
+print(new_a)
+
+a = [-5, -3, 1, 2, 3]
+print(*a)
