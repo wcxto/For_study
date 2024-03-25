@@ -24,3 +24,14 @@ print(new_a)
 
 a = [-5, -3, 1, 2, 3]
 print(*a)
+
+
+date_info = {'year': "2020", 'month': "01", 'day': "01"}
+filename = "{year}-{month}-{day}.txt".format(**date_info)
+print(filename)
+
+def transpose_list(list_of_lists):
+    return [list(row) for row in zip(*list_of_lists)]
+
+
+print(transpose_list([[1, 4, 7], [2, 5, 8], [3, 6, 9]]))
